@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_UIPageControlDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXe-cS-RW1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="9th-FE-MXa">
+                                <rect key="frame" x="263" y="282" width="74" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eXe-cS-RW1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="BfW-3i-O1m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9th-FE-MXa" secondAttribute="bottom" constant="40" id="G4R-5h-AfI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eXe-cS-RW1" secondAttribute="bottom" id="GeY-f5-6ZL"/>
+                            <constraint firstItem="eXe-cS-RW1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GzG-uc-hCD"/>
+                            <constraint firstItem="eXe-cS-RW1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Ptk-zn-mBp"/>
+                            <constraint firstItem="9th-FE-MXa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsI-uO-XN8"/>
+                            <constraint firstAttribute="trailing" secondItem="eXe-cS-RW1" secondAttribute="trailing" id="gNs-KU-dew"/>
+                            <constraint firstItem="eXe-cS-RW1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o9H-Cx-aVR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="9th-FE-MXa" id="Vld-e4-6lR"/>
+                        <outlet property="scrollView1" destination="eXe-cS-RW1" id="16y-p9-s7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="348"/>
+        </scene>
+    </scenes>
+</document>

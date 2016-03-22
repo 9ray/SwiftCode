@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB120C661CA0372B001ADED2 /* CAAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB120C651CA0372B001ADED2 /* CAAnimateViewController.swift */; };
 		CBF0ACA61C9D929500116003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0ACA51C9D929500116003 /* AppDelegate.swift */; };
 		CBF0ACA81C9D929500116003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0ACA71C9D929500116003 /* ViewController.swift */; };
 		CBF0ACAB1C9D929500116003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF0ACA91C9D929500116003 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB120C651CA0372B001ADED2 /* CAAnimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimateViewController.swift; sourceTree = "<group>"; };
 		CBF0ACA21C9D929500116003 /* 12-UIViewAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "12-UIViewAnimationDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF0ACA51C9D929500116003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF0ACA71C9D929500116003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				CBF0ACA51C9D929500116003 /* AppDelegate.swift */,
 				CBF0ACA71C9D929500116003 /* ViewController.swift */,
+				CB120C651CA0372B001ADED2 /* CAAnimateViewController.swift */,
 				CBF0ACA91C9D929500116003 /* Main.storyboard */,
 				CBF0ACAC1C9D929500116003 /* Assets.xcassets */,
 				CBF0ACAE1C9D929500116003 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF0ACA81C9D929500116003 /* ViewController.swift in Sources */,
+				CB120C661CA0372B001ADED2 /* CAAnimateViewController.swift in Sources */,
 				CBF0ACA61C9D929500116003 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				CBF0ACCC1C9D929500116003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF0ACCD1C9D929500116003 /* Build configuration list for PBXNativeTarget "12-UIViewAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				CBF0ACCF1C9D929500116003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF0ACD01C9D929500116003 /* Build configuration list for PBXNativeTarget "12-UIViewAnimationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				CBF0ACD21C9D929500116003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

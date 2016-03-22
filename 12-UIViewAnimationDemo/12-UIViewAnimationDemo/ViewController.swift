@@ -19,11 +19,19 @@ class ViewController: UIViewController {
     var mOriginFrame1 : CGRect!
     var mOriginFrame2 : CGRect!
     
+    var mFirstSubView : UIView!
+    var mOirginFrameSubvie: CGRect! = CGRect(x: 5 , y: 5, width: 50 , height: 40)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.mOriginFrame1 = self.mFirtView.frame
         self.mOriginFrame2 = self.mSecondView.frame
+        
+        self.mFirstSubView = UIView(frame: self.mOirginFrameSubvie)
+        self.mFirstSubView.backgroundColor = UIColor.purpleColor()
+        self.mFirtView.addSubview(mFirstSubView)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +40,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startBtnClicked(sender: AnyObject) {
-        self.optionalAnimate()
+       // self.optionalAnimate()
+        
+        //操作子视图
+        //self.operateSubView()
+        
+        self.replaceView()
     }
 
     
@@ -42,6 +55,8 @@ class ViewController: UIViewController {
         
         self.mSecondView.frame = mOriginFrame2
         self.mSecondView.layer.removeAllAnimations()
+        
+        self.mFirstSubView.frame = mOirginFrameSubvie
     }
     
     func basicAnimate() {
@@ -88,6 +103,19 @@ class ViewController: UIViewController {
     
     override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         print("Animation Stop")
+    }
+    
+    //MARK: Operate SubView
+    func operateSubView() {
+        UIView.transitionWithView(self.mFirtView, duration: 2.0, options: UIViewAnimationOptions.TransitionCurlUp, animations: { () -> Void in self.mFirstSubView.frame.origin.x += 200
+            self.mFirstSubView.hidden = true
+            }) { (finish) -> Void in print("Finished")}
+    }
+    
+    func replaceView() {
+        let view = UIView(frame: CGRect(x: 50, y: 400, width: 268, height: 68))
+        view.backgroundColor = UIColor.magentaColor()
+        UIView.transitionFromView(mSecondView, toView: view, duration: 2.0, options: UIViewAnimationOptions.TransitionCurlUp) { (finish) -> Void in print("finished")}
     }
 }
 
